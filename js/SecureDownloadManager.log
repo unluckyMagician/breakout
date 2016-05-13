@@ -1,0 +1,37 @@
+[Download] [Trace] OnEventMessage FileKey 3 2016/5/13 17:18:34:114 Event_ActionButton
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:34:145 Download Start Phase - InternetSetOption(NULL, INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVER, 100, sizeof(dwMaxCount)) retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:34:145 InternetSetOption(NULL, INTERNET_OPTION_MAX_CONNS_PER_SERVER, 100, sizeof(dwMaxCount))retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:34:145 InternetOpen(AfxGetAppName(), INTERNET_OPEN_TYPE_PRECONFIG, NULL, NULL, INTERNET_FLAG_DONT_CACHE | INTERNET_FLAG_RELOAD)retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:34:145 InternetSetOption(hInternetSession, INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVER, 100, sizeof(dwMaxCount));retCode = 0
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:34:145 Download Start Phase - InternetSetOption(NULL, INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVER, 100, sizeof(dwMaxCount)) retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:34:145 InternetSetOption(NULL, INTERNET_OPTION_MAX_CONNS_PER_SERVER, 100, sizeof(dwMaxCount))retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:34:145 InternetOpen(AfxGetAppName(), INTERNET_OPEN_TYPE_PRECONFIG, NULL, NULL, INTERNET_FLAG_DONT_CACHE | INTERNET_FLAG_RELOAD)retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:34:145 InternetSetOption(hInternetSession, INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVER, 100, sizeof(dwMaxCount));retCode = 0
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:144 InternetConnect(hInternetSession, 'software.dreamspark.com', 80, NULL, NULL, INTERNET_SERVICE_HTTP, 0, (DWORD) this);
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:144 HttpOpenRequest(hHttpConnection, NULL, /dreamspark/ENGLISH/en_windows_7_with_sp1_debug_checked_build_x64_dvd_619601.01.sdc, 'HTTP/1.1', NULL, NULL, 2218787072, 0)
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:159 InternetConnect(hInternetSession, 'software.dreamspark.com', 80, NULL, NULL, INTERNET_SERVICE_HTTP, 0, (DWORD) this);
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:159 HttpOpenRequest(hHttpConnection, NULL, /dreamspark/ENGLISH/en_windows_7_with_sp1_debug_checked_build_x64_dvd_619601.02.sdc, 'HTTP/1.1', NULL, NULL, 2218787072, 0)
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:190 HttpSendRequest(hHttpFile, '', 0, NULL, 0)
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:190 HttpQueryInfo(hHttpFile, HTTP_QUERY_STATUS_CODE, szStatusCode, &dwInfoSize, NULL) return statusCode 200
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:190 HttpQueryInfo(hHttpFile, HTTP_QUERY_CONTENT_LENGTH, szContentLength, &dwInfoSize, NULL) return m_ulContentLength 2147483647
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:190 InternetCloseHandle( hHttpFile )
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:190 HttpOpenRequest(hHttpConnection, NULL, /dreamspark/ENGLISH/en_windows_7_with_sp1_debug_checked_build_x64_dvd_619601.01.sdc, NULL, NULL, NULL, 2218787072, 0)
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:190 HttpSendRequest(hHttpFile, '', 0, NULL, 0)
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:190 HttpQueryInfo(hHttpFile, HTTP_QUERY_STATUS_CODE, szStatusCode, &dwInfoSize, NULL) return statusCode 200
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:190 HttpQueryInfo(hHttpFile, HTTP_QUERY_CONTENT_LENGTH, szContentLength, &dwInfoSize, NULL) return m_ulContentLength 854593186
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:222 HttpSendRequest(hHttpFile, '', 0, NULL, 0)
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:284 InternetCloseHandle( hHttpFile )
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:284 HttpOpenRequest(hHttpConnection, NULL, /dreamspark/ENGLISH/en_windows_7_with_sp1_debug_checked_build_x64_dvd_619601.02.sdc, NULL, NULL, NULL, 2218787072, 0)
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:331 processDownloadStream
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:331 InternetSetOption(hHttpFile, INTERNET_OPTION_CONTROL_RECEIVE_TIMEOUT,10000, sizeof(dwTimeout))retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:331 First InternetReadFile call
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:331 HttpSendRequest(hHttpFile, '', 0, NULL, 0)
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:331 processDownloadStream
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:331 InternetSetOption(hHttpFile, INTERNET_OPTION_CONTROL_RECEIVE_TIMEOUT,10000, sizeof(dwTimeout))retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:18:35:331 First InternetReadFile call
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:28:25:743 InternetReadFile loop completed
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:36:48:126 InternetReadFile loop completed
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:36:48:127 OnTaskMessage::DownloadTaskState_Completed call closeOutputFile
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:36:48:155 Unpacking File: C:\Users\ianpark\Downloads\en_windows_7_with_sp1_debug_checked_build_x64_dvd_619601.sdc
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:38:21:96 CRC Check completed reading 3002044061 bytes
+[Download] [Trace] OnDebugMessage FileKey 4 2016/5/13 17:38:21:169 CRC Compare 1930493108 and 1930493108
