@@ -9,6 +9,7 @@ Breakout.Preloader.prototype = {
 		this.load.image('level1-bg', 'level_1_bg.png');
 		this.load.image('paddle-med', 'paddle_med.png');
 		this.load.image('ball-small', 'ball_small.png');
+		this.load.image('brick', 'brick.png');
 	},
 
 	create: function () {
@@ -21,6 +22,7 @@ Breakout.Level1 = function (game) {
 	this.ball_small;
 	this.ball_large;
 	this.paddle_med;
+	this.brick;
 
 	this.ballOnPaddle = true;
 
@@ -47,6 +49,12 @@ Breakout.Level1.prototype = {
 		this.ball_small.body.collideWorldBounds = true;
 		this.ball_small.body.bounce.x = 1;
 		this.ball_small.body.bounce.y = 1;
+
+		for (y = 194; y < 274; y += 21) {
+			for (x = 118; x < 326; x += 52) {
+				this.brick = this.add.sprite(x, y, 'brick');
+			}
+		}
 
 		game.input.onDown.add(this.launchBall, this);
 
