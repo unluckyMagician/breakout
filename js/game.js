@@ -25,7 +25,6 @@ Breakout.Level1 = function (game) {
 	this.brick;
 
 	this.ballOnPaddle = true;
-
 };
 
 Breakout.Level1.prototype = {
@@ -50,9 +49,15 @@ Breakout.Level1.prototype = {
 		this.ball_small.body.bounce.x = 1;
 		this.ball_small.body.bounce.y = 1;
 
+		this.bricks = game.add.group();
+		this.bricks.enableBody = true;
+		this.bricks.physicsBodyType = Phaser.Physics.ARCADE;
+		this.bricks.immovable = true;
+
 		for (y = 194; y < 274; y += 21) {
 			for (x = 118; x < 326; x += 52) {
-				this.brick = this.add.sprite(x, y, 'brick');
+				this.brick = this.bricks.create(x, y, 'brick');
+				this.brick.body.immovable = true;
 			}
 		}
 
@@ -62,6 +67,7 @@ Breakout.Level1.prototype = {
 
 	update: function () {
 		this.physics.arcade.collide(this.ball_small, this.paddle_med, this.ballHitPaddle, null, this);
+		this.physics.arcade.collide(this.ball_small, this.bricks, this.ballHitBrick, null, this);
 		this.paddle_med.x = this.input.mousePointer.x - 24;
 
 		if (this.ballOnPaddle) {
@@ -98,6 +104,10 @@ Breakout.Level1.prototype = {
 	        //  Add a little random X to stop it bouncing straight up!
 	        this.ball_small.body.velocity.x = 2 + Math.random() * 8;
 	    }
+	},
+
+	ballHitBrick: function (_ball, _brick) {
+		_brick.kill();
 	}
 
 };
